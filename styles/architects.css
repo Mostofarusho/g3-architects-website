@@ -187,13 +187,15 @@ main>section {
 /* Sponsors  */
 
 .sponsors-details {
+    max-width: 540px;
+    margin: 50px auto;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .sponsor-image-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
     gap: 20px;
     background-color: white;
     margin-bottom: 20px;
@@ -202,12 +204,14 @@ main>section {
 .sponsor-image {
     width: 160px;
     height: 50px;
+    filter: grayscale(100%);
 }
 
 
 /* Footer  */
 
 footer {
+    margin-top: 50px;
     height: 100px;
     border-radius: 8px;
     background: rgb(255, 244, 231);
@@ -235,7 +239,11 @@ footer p {
     .facts-container,
     .sponsor-image-container {
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        gap: 10px;
+    }
+    .sponsor-image-container {
+        justify-items: center;
+        gap: 50px;
     }
     .our-features {
         margin-left: 20px;
@@ -269,6 +277,10 @@ footer p {
     .sponsor-image-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+    .sponsor-image-container {
+        justify-items: center;
+        gap: 50px;
     }
     .our-features {
         margin: 50px auto;
