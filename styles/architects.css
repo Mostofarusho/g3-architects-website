@@ -23,6 +23,22 @@
     background-color: rgb(255, 144, 14);
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+
+
+/* Text Primary  */
+
+.text-primary {
+    color: rgb(255, 144, 14);
+}
+
 
 /* Dark 02 */
 
@@ -41,6 +57,11 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+.section-title {
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
 
 /* Header Styles  */
 
@@ -55,6 +76,7 @@
 .brand {
     font-size: 2.8rem;
     font-weight: 700;
+    margin-left: 10px;
 }
 
 .nav-links {}
@@ -96,11 +118,110 @@
 }
 
 
-/* Responsive Media Query  */
+/* Team and feature related styles */
+
+.teams {
+    align-items: center;
+    margin: 10px 150px;
+}
+
+.team-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    margin-left: 100px;
+    max-width: 530px;
+}
+
+.feature-title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#quick-list {
+    font-weight: 500;
+}
+
+
+/* Some Facts Related Styles  */
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card {
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-number {
+    color: rgb(66, 66, 66);
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name {
+    color: rgb(114, 114, 114);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.fact-description {
+    max-width: 540px;
+}
+
+
+/* Responsive Media Query For Small Device */
 
 @media screen and (max-width:576px) {
     .navbar,
-    .nav-links {
+    .nav-links,
+    .teams {
         flex-direction: column;
     }
+    .team-image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features {
+        margin-left: 20px;
+    }
+}
+
+
+/* Responsive Media Query For Medium Device */
+
+@media screen and (min-width:576px) and (max-width:972px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links,
+    .teams {
+        flex-direction: column;
+    }
+    .team-image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .our-features {
+        margin: 50px auto;
+    }
+}
+
+
+}
+
 }
