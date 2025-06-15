@@ -205,6 +205,24 @@ main>section {
 }
 
 
+/* Footer  */
+
+footer {
+    height: 100px;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: rgb(66, 66, 66);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+
 /* Responsive Media Query For Small Device */
 
 @media screen and (max-width:576px) {
