@@ -6,6 +6,11 @@
     font-style: normal;
 }
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 
 /* Shared Styles  */
 
